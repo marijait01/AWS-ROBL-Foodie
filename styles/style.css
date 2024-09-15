@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.order-section-heading {
+    text-align: center;
+}
+
+.order-section-heading h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+    color: #333;
+}
+
+.order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-form {
+    background-color: #FFD597;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-form label {
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.order-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.pizza-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pizza-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 20%; 
+}
+
+.pizza-options img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    background-color: #8DA977;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7a9165;
+}

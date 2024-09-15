@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieApp - Order Your Pizza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section class="order-section">
+        <div class="order-section-heading">
+            <h1>FoodieApp</h1>
+        </div>
+        <div class="order-form">
+            <form id="foodOrderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <h2>Select your pizza:</h2>
+                <div class="pizza-options">
+                    <label>
+                        <input type="radio" name="pizza" value="Margarita" required>
+                        <img src="images/margarita.PNG" alt="Margarita">
+                        Margarita
+                    </label>
+                    <label>
+                        <input type="radio" name="pizza" value="Primavera" required>
+                        <img src="images/primavera.PNG" alt="Primavera">
+                        Primavera
+                    </label>
+                    <label>
+                        <input type="radio" name="pizza" value="LittleNapoli" required>
+                        <img src="images/littlenapoli.PNG" alt="LittleNapoli">
+                        Little Napoli
+                    </label>
+                </div>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
