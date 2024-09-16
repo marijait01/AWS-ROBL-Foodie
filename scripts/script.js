@@ -13,7 +13,7 @@ document.getElementById('foodOrderForm').addEventListener('submit', function(eve
         pizza: pizza
     };
 
-    const apiUrl = 'https://fd4j38i17l.execute-api.us-east-1.amazonaws.com/prod/submit';
+    const apiUrl = 'https://ql7zfo1ug4.execute-api.us-east-1.amazonaws.com/prod/submit';
 
     fetch(apiUrl, {
         method: 'POST',
