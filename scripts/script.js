@@ -6,5 +6,30 @@ document.getElementById('foodOrderForm').addEventListener('submit', function(eve
     const phone = document.getElementById('phone').value;
     const pizza = document.querySelector('input[name="pizza"]:checked').value;
 
-    alert(`Order Details:\nName: ${name}\nAddress: ${address}\nPhone: ${phone}\nPizza: ${pizza}`);
+    const orderData = {
+        name: name,
+        address: address,
+        phone: phone,
+        pizza: pizza
+    };
+
+    const apiUrl = 'https://fd4j38i17l.execute-api.us-east-1.amazonaws.com/prod/submit';
+
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(orderData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response from your API or Lambda function
+        console.log('Success:', data);
+        alert('Order submitted successfully!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('There was an error submitting your order.');
+    });
 });
